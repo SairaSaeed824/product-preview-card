@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Card</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f4f1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: fantasy;
+        }
+        
+        .card {
+            display: flex;
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        
+        .image-section img {
+            width: 100%;
+            height: auto;
+        }
+        
+        .text-section {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        
+        .category {
+            font-size: 14px;
+            letter-spacing: 2px;
+            color: #8e8e8e;
+            text-transform: uppercase;
+        }
+        
+        h1 {
+            font-size: 24px;
+            margin: 10px 0;
+        }
+        
+        .description {
+            color: #707070;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        
+        .price {
+            display: flex;
+            align-items: center;
+            margin: 20px 0;
+        }
+        
+        .new-price {
+            font-size: 24px;
+            font-weight: bold;
+            color: #3e8e41;
+            margin-right: 10px;
+        }
+        
+        .old-price {
+            font-size: 16px;
+            text-decoration: line-through;
+            color: #b3b3b3;
+        }
+        
+        .img {
+            margin-right: 15px;
+            height: 20px;
+            border: 4px;
+        }
+        
+        button {
+            background-color: #3e8e41;
+            color: white;
+            padding: 10px;
+            font-size: 18px;
+            border-radius: 5px;
+            display: flex;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            justify-content: center;
+        }
+        
+        button:hover {
+            background-color: #2f6e32;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <div class="image-section">
+            <img src="./images/image-product-desktop.jpg" alt="Gabrielle Essence Eau De Parfum" />
+        </div>
+        <div class="text-section">
+            <p class="category">PERFUME</p>
+            <h1>Gabrielle Essence Eau De Parfum</h1>
+            <p class="description">
+                A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.
+            </p>
+            <div class="price">
+                <span class="new-price">$149.99</span>
+                <span class="old-price">$169.99</span>
+            </div>
+            <button><img class="img " src=".\images\icon-cart.svg" > Add to Cart</button>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
